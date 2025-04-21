@@ -34,10 +34,10 @@ user_input = input("Enter the word ").upper()
 # if "a" in user_input:
 #     print("hi")
 # list_phonetic = [value for (key, value) in alpha_dict.items() if key in user_input]
-list_phonetic = []
-for letter in user_input:
-    for (key, value) in alpha_dict.items():
-        if letter == key:
-            list_phonetic.append(value)
+list_phonetic = [alpha_dict[letter] for letter in user_input ]
+# for letter in user_input:
+#     for (key, value) in alpha_dict.items():
+#         if letter == key:
+#             list_phonetic.append(value)
 # list_phonetic_2 = [word  for (key, word) in alpha_dict.items() if key ]         
 print(list_phonetic)
